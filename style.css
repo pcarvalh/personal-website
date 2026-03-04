@@ -1,0 +1,175 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #f9f9f7;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 520px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+/* Photo */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+  display: block;
+  margin-inline: auto;
+}
+
+.avatar-placeholder {
+  display: none;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #e8e8e5;
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  margin-inline: auto;
+  letter-spacing: 0.02em;
+}
+
+/* Name & title */
+.pronunciation {
+  font-size: 0.78rem;
+  color: #aaa;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+
+.institution {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Bio */
+.bio {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.links a {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 1.5px solid #d0d0cc;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.links a:hover {
+  border-color: #1a1a1a;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111110;
+    color: #e8e8e5;
+  }
+
+  .card {
+    background: #1c1c1a;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .avatar-placeholder {
+    background: #2e2e2b;
+    color: #888;
+  }
+
+  .pronunciation {
+    color: #555;
+  }
+
+  .title {
+    color: #999;
+  }
+
+  .institution {
+    color: #777;
+  }
+
+  .bio {
+    color: #bbb;
+  }
+
+  .links a {
+    border-color: #3a3a37;
+    color: #e8e8e5;
+  }
+
+  .links a:hover {
+    border-color: #e8e8e5;
+    background: #e8e8e5;
+    color: #111110;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
