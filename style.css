@@ -58,7 +58,7 @@ a {
 /* ── Profile grid ── */
 .profile {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 336px 1fr;
   gap: 3rem;
   align-items: start;
 }
