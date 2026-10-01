@@ -58,14 +58,14 @@ a {
 /* ── Profile grid ── */
 .profile {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 3rem;
   align-items: start;
 }
 
 .profile-img-wrap {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   background: var(--border);
   overflow: hidden;
 }
@@ -112,5 +112,5 @@ a {
   main { padding: 3.5rem 1.25rem 5rem; }
   .name-title { font-size: 1.9rem; }
   .profile { grid-template-columns: 1fr; gap: 2rem; }
-  .profile-img-wrap { max-width: 180px; }
+  .profile-img-wrap { max-width: 220px; }
 }
